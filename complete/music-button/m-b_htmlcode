@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>음악 버튼 애니메이션</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div class="button-row">
+		<button class="button | button--toggle">
+			<i class="ph-shuffle"></i>
+		</button>
+		<button class="button">
+			<i class="ph-skip-back"></i>
+		</button>
+		<button class="button | button--toggle button--play | is-active">
+			<i class="ph-play"></i>
+			<i class="ph-pause"></i>
+		</button>
+		<button class="button">
+			<i class="ph-skip-forward"></i>
+		</button>
+		<button class="button | button--toggle">
+			<i class="ph ph-repeat"></i>
+		</button>
+	</div>
+	<label class="theme-toggle">
+		<input type="checkbox" />
+		<i class="ph-lightbulb"></i>
+		<span>배경 바꾸기</span>
+	</label>
+
+	<script src='https://unpkg.com/phosphor-icons'></script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
