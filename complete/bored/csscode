@@ -1,0 +1,51 @@
+/* body 부분 */
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #000;
+}
+
+/* html , body 부분 */
+html, body {
+    height: 100%;
+}
+
+/* div 클래스 pager 부분 */
+.pager{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* div 클래스 pager 버튼 부분 */
+.pager button {
+    flex: 0 0 42px;
+    height: 42px;
+    border: 0;
+    padding: 6px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* div 클래스 pager 버튼의 span태그 부분 */
+.pager button span {
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    background: #383142;
+    transition: 0.4s;
+}
+
+/* div 클래스 pager 버튼의 초점 */
+.pager button:focus {
+    flex: 0 0 80px;
+}
+
+/* div 클래스 pager 버튼의 초점 & span태그 부분 */
+.pager button:focus span {
+    background: #00c853;
+}
