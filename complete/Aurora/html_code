@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 캔버스 생성 // 이 캔버스를 중심으로 오로라 효과를 구현 -->
+    <canvas id = 'canv'></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
