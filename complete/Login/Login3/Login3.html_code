@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그</title>
+</head>
+<body>
+
+    <!-- 웹 브라우저 , 생일 , 색상 , 이메일 , 전화 , 홈페이지 , 저장 / 구현됨 -->
+    <div class="title">사용자 정보</div>
+
+    <form name="searchform" method="post" action="#">
+        <div class="item">
+            <div class="fieldlabel">사용 웹 브라우저</div>
+            <select name="browsers" id="browsers">
+                <option value="크롬">크롬</option>
+                <option value="사파리" selected>사파리</option>
+                <option value="엣지">엣지</option>
+                <option value="인터넷 익스플로러" label="IE">인터넷 익스플로러</option>
+                <option value="파이어폭스">파이어폭스</option>
+                <option value="오페라">오페라</option>
+            </select>
+        </div>
+        <div class="item">
+            <div class="fieldlabel">생일</div>
+                <input type="date" name="birth" value="2018-12-01"></div>
+            <div class="item">
+                <div class="fieldlabel">배경색상</div>
+                <input type="color" name="webcolor" value="#f4040"></div>
+            <div class="item">
+                <div class="fieldlabel">이메일주소</div>
+                <input type="email" name="emailaddress" placeholder="example@domain.com" value=""></div>
+            <div class="item">
+                <div class="fieldlabel">전화</div>
+                <input type="tel" name="phone" placeholder="010-0000-0000" value=""></div>
+            <div class="item">
+                <div class="fieldlabel">홈페이지</div>
+                <input type="url" placeholder="address@domain.com" name="email1"></div>
+        </div>
+
+        <input type="submit" value="저장">
+        
+    </form>
+</body>
+</html>
