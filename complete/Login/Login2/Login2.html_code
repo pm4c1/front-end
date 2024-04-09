@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그</title>
+</head>
+<body>
+
+    <!-- 
+         이름 , 비번 , 성별 , 교통수단 , 생일 , 
+
+         색상 , 이메일 , 나이 , 연락처 , 블로그(URL)
+
+         초기화 , 등록 / 구현됨   
+    -->
+    <form>
+        <!-- text -> 이름 작성 -->
+        이름 : <input type="text" name="user_name"><br>
+        <!-- password -> 비밀번호 작성 -->
+        패스워드 : <input type="password" name="user_pw"><br>
+        <!-- radio -> 성별 체크  -->
+        성별 : <input type="radio" name="gender" value="male" checked> 남
+            <input type="radio" name="gender" value="female"> 여 <br>
+
+        <!-- checkbox -> 교통수단 박스들 체크 -->
+        주로 이용하는 교통수단 : <br><input type="checkbox" name="vehicle" value="Bike"> 자전거
+        <input type="checkbox" name="vehicle" value="Car"> 승용차
+        <input type="checkbox" name="vehicle" value="Bus"> 버스
+        <input type="checkbox" name="vehicle" value="Bus"> 지하철<br>
+
+        <!-- date -> 달력을 꺼내와 선택 -->
+        생일 : <input type="date" name="bday" max="2030-12-31"><br>
+        <!-- color -> 색상 R G B 를 직접 선택 -->
+        좋아하는 색상 : <input type="color" name="favcolor"><br>
+        <!-- email -> @~~ 를 안하면 등록 불가 -->
+        이메일 주소 : <input type="email" name="email" placeholder="example@domain.com" value=""><br>
+        <!-- range -> 직접 포인트를 움직여서 나이 조정 -->
+        나이 : <input type="range" name="points" min="0" max="100" step="1" value="0" oninput="document.getElementById('value1').innerHTML=this.value;">
+            <span id="value1"></span><br>
+        <!-- tel -> 전화번호 작성 -->
+        연락처 : <input type="tel" name="user_tel" placeholder="010-0000-0000" value=""><br>
+        <!-- url -> 이름만 블로그 , url 입력 -->
+        블로그 <input type="url" name="blogurl" placeholder="https://www.domain.com"><br>
+            <!-- 초기화 및 등록 -->
+        <input type="reset" value="초기화">
+        <input type="submit" value="등록"><br>
+
+    </form>
+    </form>
+</body>
+</html>
