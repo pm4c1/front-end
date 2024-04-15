@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 한국어로 변경시 오류가 일어나지 않도록 met태그 -->
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Header -->
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                    <a href="#"><img src="#" alt="이미지1">
+                        <img src="#" alt="이미지2"></a>
+                </h1>
+                <ul class="gnb">
+                    <!-- GNB -->
+                    <!-- <ul>태그는 맨 밑에 닫힘 ( gnb 전체의 구성임) -->
+                    <li>
+                        <ul>
+                            <li>Home1</li>
+                            <li>Home2</li>
+                            <li>Home3</li>
+                            <li>Home4</li>
+                        </ul>
+                    </li>
+                    <!-- [시멘틱웹 (semantic web)] -->
+                    <!-- 1. Span(inline) , Div(block) 둘 중 하나 선택 ( 레이아웃을 본 뒤 ) -->
+                    <!-- 2. 레이아웃을 잡음 ( div )로 블록을 잡음 -->
+                    <li><a href="#">Skill</a>
+                        <ul class="inner">
+                            <li><a href="#">Home1</a></li>
+                            <li><a href="#">Home2</a></li>
+                            <li><a href="#">Home3</a></li>
+                            <li><a href="#">Home4</a></li>
+                            <!-- a태그 넣는 이유 : 페이지를 넘기기 위해 -->
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul class="inner">
+                            <li><a href="#">Contact1</a></li>
+                            <!-- a태그 넣는 이유 : 페이지를 넘기기 위해 -->
+                        </ul>
+                    </li>
+
+                    <!-- span태그가 아닌 list태그 -->
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- 1. 레이아웃을 잡는다 div로 블록을 잡는다. -->
+    <!-- inline : span/ div : block 전체를 잡는 것 // ( 디스플레이속성 ) -->
+    <!-- 레이아웃을 보고 div를 쓸지 결정 -->
+    <!-- 시멘틱 웹 : 의미론적 //  -->
+
+
+</body>
+
+</html>
