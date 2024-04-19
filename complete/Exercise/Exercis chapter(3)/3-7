@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>3 Column example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        width: 100%;
+      }
+
+      .column {
+        display: inline-block;
+        width: 30%;
+        padding: 15px;
+      }
+
+      @media screen and (max-width:600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h2>3 column example</h2>
+    <hr>
+
+    <div class="row">
+      <div class="column">
+        <h2>Title-1</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus
+        quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+      </div>
+
+      <div class="column">
+        <h2>Title-2</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus
+        quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+      </div>
+
+      <div class="column">
+        <h2>Title-3</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus
+        quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+      </div>
+    </div>
+  </body>
+
+</html>
