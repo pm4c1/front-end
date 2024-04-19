@@ -1,0 +1,12 @@
+<!doctype html>
+<html> 
+    <head>
+        <title>display example</title>
+    </head>
+    <body>
+        <h1>Text-1</h1>
+        <p>Text-2</p>
+        <a>Text-3</a>
+        <span>Text-4</span>
+    </body>
+</html>
