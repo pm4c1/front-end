@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>float example</title>
+    <style>
+      p {
+        text-align: justify;
+        width: 90%;
+      }
+
+      img {
+        float: left;
+        padding: 20px;
+      }
+			.box {
+				border: 1px solid;
+				width: 100px;
+				height: 100px;
+				float: left;
+				margin: 5px;
+			}
+			p.box {
+				clear: left;
+			}
+    </style>
+  </head>
+
+  <body>
+    <img src="http://via.placeholder.com/200x100">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quae voluptate tempora molestiae, laboriosam ipsum veniam rerum quibusdam ullam. Et perspiciatis deleniti dolor praesentium tempora modi tenetur voluptate nobis accusamus soluta facilis
+      quae veritatis sunt repudiandae aliquid consequuntur officia assumenda voluptates, eaque quo excepturi. Officiis quidem quia placeat ad voluptatem.</p>
+
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+		<div class="box">box3</div>
+    <p class="box">box4</p>		
+  </body>
+
+</html>
