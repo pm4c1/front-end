@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>display example</title>
+    <style>
+      h1 {
+        display: inline;
+      }
+
+      p {
+        display: inline-block;
+      }
+
+      a {
+        display: block;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Text-1</h1>
+    <p>Text-2</p>
+    <a href="#">Text-3</a>
+    <span>Text-4</span>
+  </body>
+
+</html>
