@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Box position</title>
+    <style>
+      div {
+        border: 3px solid #73AD21;
+        max-width: 300px;
+        margin: auto;
+        height: 100px;
+        background-color: white;
+      }
+      .box1 {
+        position: static;
+      }
+      .box2 {
+        position: relative;
+        left: 30px;
+        top: -30px;
+      }
+      .box3 {
+        position: relative;
+        left: 60px;
+        top: -60px;
+      }
+      .box4 {
+        position: absolute;
+        left: 75px;
+        top: 75px;
+      }
+      .box5 {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <H2>Box position example</H2>
+    <hr>
+    <div class="box1">Box-1: static</div>
+    <div class="box2">Box-2: relative</div>
+    <div class="box3">Box-3: relative</div>
+    <hr>
+    <div class="box4">Box-4: absolute</div>
+    <div class="box5">Box-5: fixed</div>
+  </body>
+
+</html>
