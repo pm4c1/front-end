@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Basic Selector</title>
+    <style>
+      h2 {
+        color: darkorange;
+      }
+
+      .blue_text {
+        color: blue;
+      }
+
+      #red_text {
+        color: red;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h2>Tag selector</h2>
+    <hr>
+    <h2 class="blue_text">Class selector</h2>
+    <hr>
+    <h2 id="red_text">Id selector</h2>
+  </body>
+
+</html>
