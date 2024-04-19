@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Center alignment</title>
+    <style>
+      .box-center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+        text-align: center;
+      }
+      .img-center {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Center alignment</h2>
+    <div class="box-center">
+      Hello World
+    </div>
+    <p></p>
+    <img class="img-center" src="http://via.placeholder.com/200x100">
+  </body>
+
+</html>
