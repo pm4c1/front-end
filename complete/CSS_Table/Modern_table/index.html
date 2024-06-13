@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    $('table tr').each(function () {
+        $(this).find('th').first().addClass('first');
+        $(this).find('th').last().addClass('last');
+        $(this).find('td').first().addClass('first');
+        $(this).find('td').last().addClass('last');
+    });
+
+    $('table tr').first().addClass('row-first');
+    $('table tr').last().addClass('row-last');
+</script>
+
+</html>
