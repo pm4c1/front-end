@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>구구단</title>
+</head>
+
+<body>
+
+    <h2>구구단 구하기(0이면 초기화)</h2>
+    <input type="number" id="value">
+    <input type="button" value="계산" onclick="gugudan()">
+    <hr>
+
+    <div id="result"></div>
+
+    <script>
+        function gugudan() {
+            let dan = document.getElementById("value").value;
+            let resultDiv = document.getElementById("result");
+
+            if (dan == 0) {
+                resultDiv.innerHTML = ''; 
+            } else {
+                resultDiv.innerHTML += `<h4>${dan} 단 출력</h4>`;
+                for (let i = 1; i < 10; i++) {
+                    resultDiv.innerHTML += `<span>${dan} X ${i} = ${dan * i} <br></span>`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
