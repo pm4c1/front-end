@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2 style="color:rgb(26, 191, 80)">NAVER</h2>
+    <input type="text" id="id" placeholder="Username"><br>
+    <input type="password" id="pw" placeholder="Password"><br>
+    <input type="button" value="Sign in" onclick="login()">
+
+    <script>
+        const id = "kwak";
+        const pw = 21203;
+
+        function login() {
+            let inputId = document.getElementById("id").value;
+            let inputPw = document.getElementById("pw").value;
+
+            console.log(`${inputId}, ${inputPw}`);
+
+            if (id == inputId) {
+                if(pw == inputPw) {
+                    alert("page loading");
+                    open("http://naver.com", "성준", "width=350, height=400, left=50, top=10, scrollbars=no");
+                } else {
+                    alert("password fail");
+                    location.reload();
+                }
+            } else {
+                alert("id fail");
+                location.reload();
+            }   
+        }
+    </script>
+
+</body>
+</html
