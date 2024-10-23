@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>다크모드 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="warpper">
+        <header>
+            <img src="imgs/main_img.png" alt="main">
+
+            <div class="mode">
+                <label for="모드변경">모드변경</label>
+                <input type="checkbox" value="다크모드" id="모드변경">
+            </div>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="imgs/logo.png" alt="로고">
+                </a>
+            </div>
+            <!-- ul>(li>a[href="#"])*3 -->
+            <!-- ul>li*3>a[href="#"] -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">School</a></li>
+                <li><a href="#">Major</a></li>
+                <li><a href="#">Etc</a></li>
+            </ul>
+
+            <img src="imgs/qhshqhsh.png" alt="보노보노" class="bonobono">
+        </nav>
+
+        <section>
+            <h2><a href="#" style="color: black;">Home</a></h2>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                Incidunt quibusdam iusto, alias est perferendis aut ipsa itaque<br>
+                numquam officia iste, explicabo velit. Optio,<br>
+                quod dignissimos praesentium consequuntur eaque ad ab!
+            </p>
+        </section>
+    </div>
+
+    <script>
+        let checked = document.getElementById("모드변경").checked;
+
+        if(checked){
+            document.getElementsByTagName("nav")[0].style.backgroundColor="black";
+        } else {
+            document.getElementsByTagName("nav")[0].style.backgroundColor="black";
+        }
+    </script>
+</body>
+
+</html>
