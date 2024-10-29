@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="imgslide2.css">
+</head>
+<body>
+    <div class="slideBox">
+        <div class="box">
+            <img src="imgs/img_1.jpg" alt="img1">
+            <img src="imgs/img_2.jpg" alt="img2">
+            <img src="imgs/img_3.jpg" alt="img3">
+            <img src="imgs/img_4.jpg" alt="img4">
+            <img src="imgs/img_5.jpg" alt="img5">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <input type="button" value="다음" onclick="next()">
+    </div>
+
+    <script>
+        let idx = 0;
+        const totalImages = 5;
+        let next = () => {
+            idx++;
+            if (idx >= totalImages) idx = 0;
+            let box = document.getElementsByClassName("box")[0];
+            box.style.transform = `translateX(${idx * -100}%)`;
+        }
+    </script>
+</body>
+</html>
