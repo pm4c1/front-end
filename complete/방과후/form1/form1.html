@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="form1.css">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="form1_p.html" name="form1" method="post" onsubmit="chk()">
+    <form action="form1_p.html" name="form1" method="post" onsubmit="return chk()">
         <div class="idBox">
             <label for="id" class="icon"><img src="img/id_logo.png" alt="id_logo"></label>
             <input type="text" placeholder="아이디" class="input" name="id">
         </div>
-        
+
         <div class="pwBox">
             <label for="pw" class="icon"><img src="img/pw_logo.png" alt="id_logo"></label>
             <input type="password" placeholder="비밀번호" class="input" name="pw">
@@ -34,7 +36,7 @@
                     <label for="f">여자</label>
                 </li>
                 <li>
-                    <input type="radio" name="gender" id="n" value="none">
+                    <input type="radio" name="gender" id="n" value="none" checked>
                     <label for="n">알수없음</label>
                 </li>
             </ul>
@@ -44,10 +46,37 @@
             <label for="telBox" class="icon"><img src="img/phone_logo.png" alt="id_logo"></label>
             <input type="tel" name="phone" placeholder="휴대전화번호" maxlength="11" class="input">
         </div>
-        
+
         <div class="submitBox">
             <input type="submit" value="가입하기" id="submit">
         </div>
     </form>
+
+    <script>
+        let chk = () => {
+            let form = document.form1;
+            let pWorld = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()])[a-zA-Z\d!@#$%^&*()]{8,12}$/;
+            let ph = /^(01[0-9])[-]?(\d{3,4})[-]?(\d{4})$/;
+
+            if (!form.id.value) {
+                alert("id meow");
+                form.id.focus();
+                return false;
+            }
+            if (!pWorld.test(form.pw.value)) {
+                alert("비밀번호는 영어, 숫자, 특수기호 포함 8~12자 내외");
+                form.pw.value = "";
+                form.pw.focus();
+                return false;
+            }
+            if (!ph.test(form.phone.value)){
+                alert("니앰");
+                form.tel.value = "";
+                form.phone.focus();
+                return false;
+            }
+        }
+    </script>
 </body>
+
 </html>
