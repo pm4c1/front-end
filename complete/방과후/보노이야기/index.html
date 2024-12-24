@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>보노 이야기</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <script src="./jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<div>
+    <main>
+        <!-- 메뉴 -->
+        <aside>
+            <div>
+                <div class="logo logoTop">
+                    <a href="#"><img src="./images/logo.jpg" alt="로고"></a>
+                </div>
+
+                <nav>
+                    <ul class="navi">
+                        <li><a href="#">보노 소개</a>
+                            <ul class="subMenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">보노의 유래</a></li>
+                                <li><a href="#">보노 재료</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">보노퓨전</a>
+                            <ul class="subMenu">
+                                <li><a href="#">나라별 보노</a></li>
+                                <li><a href="#">보노 스파게티</a></li>
+                                <li><a href="#">보노 볶음밥</a></li>
+                                <li><a href="#">실리콘제품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">체험프로그램</a>
+                            <ul class="subMenu">
+                                <li><a href="#">보노 담그기</a></li>
+                                <li><a href="#">명사와 함께</a></li>
+                                <li><a href="#">관람하기</a></li>
+                                <li><a href="#">예약하기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="subMenu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">참여게시판</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logo logoBottom">
+                <a href="#"><img src="./images/logo.jpg" alt="로고"></a>
+            </div>
+        </aside>
+
+        <div class="bodyWrap">
+            <section class="contentsWrap">
+                <!-- 좌 -->
+                <!-- [1] 컨텐츠 : 공지사항, 갤러리  -->
+                <div class="contentItem">
+                    <section class="bannerImg">
+                        <img src="./images/img1.jpg" alt="보노이야기 이미지1">
+                    </section>
+                    <section id="notice" class="tab-panel notice">
+                        <div class="contentsTitle">
+                            <p>공지사항</p>
+                        </div>
+                        <ul>
+                            <li><a href="#">보노보노란?
+                                    <span>2024.01.15</span></a></li>
+                            <li><a href="#">윤건이가 버려진 이유
+                                    <span>2007.09.03</span></a></li>
+                            <li><a href="#">땡땡이가 컨닝한 이유
+                                    <span>1293.12.03</span></a></li>
+                            <li><a href="#">숫자가 사람인 이유
+                                    <span>3333.33.33</span></a></li>
+                        </ul>
+                    </section>
+                    <section id="gallery" class="tab-panel gallery">
+                        <div class="contentsTitle">
+                            <p>갤러리</p>
+                        </div>
+                        <div class="galleryImg">
+                            <div><a href="#"><img src="./images/gallery1.jpg" alt="갤러리1">
+                                    <p>갤러리1 설명</p>
+                                </a></div>
+                            <div><a href="#"><img src="./images/gallery2.jpg" alt="갤러리2">
+                                    <p>갤러리2 설명</p>
+                                </a></div>
+                        </div>
+                    </section>
+                    <section class="goods">
+                        <img src="./images/icon1.jpg" alt="보노이야기 이미지1">
+                        <img src="./images/icon2.jpg" alt="보노이야기 이미지2">
+                        <img src="./images/icon3.jpg" alt="보노이야기 이미지3">
+                        <img src="./images/icon4.jpg" alt="보노이야기 이미지4">
+                    </section>
+                </div><!-- //END contents -->
+
+                <!-- 우 -->
+                <!-- [2] 컨텐츠 : 슬라이드, 배너 -->
+                <section class="imgSlide">
+                    <a href="#" class="imgIndex1"><span class="imgText">보노이야기 1</span></a>
+                    <a href="#" class="imgIndex2"><span class="imgText">보노이야기 2</span></a>
+                    <a href="#" class="imgIndex3"><span class="imgText">보노이야기 3</span></a>
+                </section>
+
+            </section>
+
+            <!-- 하단 footer -->
+            <footer>
+                <div class="footerMenu">
+                    <a href="#">BONOBONOMENU1</a>
+                    <div> | </div>
+                    <a href="#">BONOBONOMENU2</a>
+                    <div> | </div>
+                    <a href="#">BONOBONOMENU3</a>
+                    <div> | </div>
+                    <a href="#">BONOBONOMENU4</a>
+                    <div> | </div>
+                    <a href="#">BONOBONOMENU5</a>
+                    <div> | </div>
+                    <a href="#">BONOBONOMENU6</a>
+                </div>
+                <div class="footerCright">
+                    333333333&copy;3333 333. 33333 3333333 333333.
+                </div>
+            </footer>
+        </div><!-- bodyWrap -->
+    </main>
+    <div id="modalWrap">
+        <div class="modal">
+            <h1>보노보노란?</h1>
+            <p>
+                일본에서 매우 큰 인기를 누리고 있어 1986년부터 지금까지 연재가 이어지는 장수 4컷 만화다.
+                다만 4컷 만화여서 그런지 단행본 발매 텀이 1년에 한 권 정도로 극악하게 길다.
+                한국에서는 과거 엄청난 히트를 친 추억의 애니로 기억되고 있다.
+            </p>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+
+    <div id="modalwRap">
+        <div class="modal">
+            <h1>윤건이가 버려진 이유</h1>
+            <p>
+                윤건이는 다리 밑에서 주워왔기에 태초부터 버려져있었다.
+            </p>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+
+    <div id="modalwrAp">
+        <div class="modal">
+            <h1>땡땡이가 컨닝한 이유</h1>
+            <p>
+                영어가 노무 어려워서 핸드폰 see하다 걸려서
+                "이정도만 쓰고 낼게요~"하고 자신감부림
+            </p>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+
+    <div id="modalwraP">
+        <div class="modal">
+            <h1>숫자가 사람인 이유</h1>
+            <p>
+                3
+            </p>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+    </body>
+
+</html>
